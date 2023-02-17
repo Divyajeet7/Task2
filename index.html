@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+    
+    <table>
+        <tr>
+            
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="username"><span class="asterix">*</span> Username:</label>
+                        <input type="text" required name="username" id="username" placeholder="Username">
+                        
+                        <label for="email"><span class="asterix">*</span> E-mail:</label>
+                        <input type="email" required placeholder="Enter E-mail" name="email" id="email">
+                        
+                        <label for="password"><span class="asterix">*</span> Password:</label>
+                        <input type="password" required name="password" id="password" placeholder="Password">
+                        
+                        <label for="confirm-password"><span class="asterix">*</span> Confirm Password:</label>
+                        <input type="password" required placeholder="Confirm Password" name="confirm-password" id="confirm-password" onkeyup="passConfirm();">
+                        
+                        <span id="Message"></span>
+
+                        <br>
+
+                        <label for="comment"><span class="asterix">*</span> Comment:</label>
+                        <!-- <input type="text" required placeholder="Write any thing" name="comment" id="comment"> -->
+                        <textarea id="comment" name="comment" rows="4" cols="15" placeholder="Write any thing"></textarea>
+                        
+                        <div class="form_action--button">
+                        <input type="submit"></input>
+                        <input type="reset"></input>
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>E-mail</th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+
+</div>
+</body>
+<script src="script.js"></script>
+</html>

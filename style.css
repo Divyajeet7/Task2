@@ -1,0 +1,48 @@
+table{
+    width: 80%;
+    margin: 40px auto;
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+input[type="text"],input[type="password"],input[type="email"]{
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type="submit"],input[type="reset"]{
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.asterix{
+    color: red;
+}
